@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aero Styles — Classic Men's Wear</title>
+  <meta name="description" content="Aero Styles — Timeless men's fashion. Suits, shirts, outerwear and accessories crafted for the modern gentleman.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Italiana&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/classic-light.css">
+</head>
+<body class="light-theme">
+  <div class="site-grain" aria-hidden="true"></div>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-monogram">AS</div>
+      <span class="preloader-logo">Aero Styles</span>
+      <span class="preloader-tagline">Tailored Excellence Since 1987</span>
+      <div class="preloader-stitch"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Announcement Marquee -->
+  <div class="announcement-bar">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Complimentary Shipping on Orders Over ₹4,999</span>
+        <span class="marquee-dot">◆</span>
+        <span>Spring / Summer 2026 Collection</span>
+        <span class="marquee-dot">◆</span>
+        <span>Bespoke Tailoring · Premium Fabrics</span>
+        <span class="marquee-dot">◆</span>
+        <span>Complimentary Shipping on Orders Over ₹4,999</span>
+        <span class="marquee-dot">◆</span>
+        <span>Spring / Summer 2026 Collection</span>
+        <span class="marquee-dot">◆</span>
+        <span>Bespoke Tailoring · Premium Fabrics</span>
+        <span class="marquee-dot">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner container">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#" class="logo" data-nav="home">
+        <span class="logo-main">Aero Styles</span>
+        <span class="logo-sub">Est. 1987</span>
+      </a>
+
+      <nav class="nav-desktop" id="navDesktop">
+        <a href="#home" class="nav-link active" data-nav="home">Home</a>
+        <a href="#shop" class="nav-link" data-nav="shop">Shop</a>
+        <a href="#collections" class="nav-link" data-nav="collections">Collections</a>
+        <a href="#about" class="nav-link" data-nav="about">About</a>
+        <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#home" class="nav-link" data-nav="home">Home</a>
+      <a href="#shop" class="nav-link" data-nav="shop">Shop</a>
+      <a href="#collections" class="nav-link" data-nav="collections">Collections</a>
+      <a href="#about" class="nav-link" data-nav="about">About</a>
+      <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Search Overlay -->
+  <div class="overlay" id="searchOverlay">
+    <div class="search-panel">
+      <button class="close-btn" id="closeSearch" aria-label="Close search">&times;</button>
+      <h2>Search Our Collection</h2>
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" placeholder="Search suits, shirts, jackets..." autocomplete="off">
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-pinstripe" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-ornament reveal animate-draw">
+            <span class="ornament-line"></span>
+            <span class="ornament-text">Est. MCMLXXXVII</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="hero-tag animate-fade-up">Spring · Summer · 2026</p>
+          <h1 class="hero-title animate-fade-up delay-1">
+            <span class="title-line">The Art of</span>
+            <span class="title-line title-accent"><em>Gentleman's</em> Dress</span>
+          </h1>
+          <p class="hero-desc animate-fade-up delay-2">Impeccably cut suits, fine shirting, and heritage outerwear — composed for the man who dresses with intention, not excess.</p>
+          <div class="hero-cta animate-fade-up delay-3">
+            <a href="#shop" class="btn btn-primary" data-nav="shop"><span>Enter the Atelier</span></a>
+            <a href="#collections" class="btn btn-ghost" data-nav="collections"><span>View Collections</span></a>
+          </div>
+          <div class="hero-trust animate-fade-up delay-4">
+            <div class="trust-item"><strong data-count="37" data-suffix="+">0</strong><span>Years of Craft</span></div>
+            <div class="trust-divider"></div>
+            <div class="trust-item"><strong data-count="12" data-suffix="K+">0</strong><span>Gentlemen Served</span></div>
+            <div class="trust-divider"></div>
+            <div class="trust-item"><strong>200+</strong><span>Curated Pieces</span></div>
+          </div>
+        </div>
+        <div class="hero-visual animate-fade-left delay-2">
+          <div class="hero-frame" id="heroParallax">
+            <div class="frame-corner frame-tl"></div>
+            <div class="frame-corner frame-tr"></div>
+            <div class="frame-corner frame-bl"></div>
+            <div class="frame-corner frame-br"></div>
+            <img src="https://picsum.photos/seed/aerostyles-hero-mens/900/1100" alt="Classic men's tailoring" loading="eager" onerror="this.onerror=null;this.src='/images/placeholder.svg'">
+            <div class="hero-caption">Heritage Wool · Italian Mill</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Discover</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Features Strip -->
+    <section class="features-strip">
+      <div class="container features-grid stagger-children reveal">
+        <div class="feature-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div>
+            <strong>Free Shipping</strong>
+            <span>On orders over ₹4,999</span>
+          </div>
+        </div>
+        <div class="feature-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div>
+            <strong>Secure Checkout</strong>
+            <span>256-bit SSL encryption</span>
+          </div>
+        </div>
+        <div class="feature-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <div>
+            <strong>Easy Returns</strong>
+            <span>30-day hassle-free</span>
+          </div>
+        </div>
+        <div class="feature-item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <strong>Express Delivery</strong>
+            <span>2–4 business days</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories section" id="collections">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">The Wardrobe</span>
+          <h2 class="section-title">Dress by Discipline</h2>
+          <div class="section-rule reveal"></div>
+          <p class="section-desc">From boardroom armour to weekend ease — each category curated with the restraint of true classic dress.</p>
+        </div>
+        <div class="categories-grid stagger-children reveal">
+          <a href="#shop" class="category-card reveal" data-filter="suits" data-nav="shop">
+            <img src="https://picsum.photos/seed/aerostyles-cat-suits/600/800" alt="Suits" onerror="this.onerror=null;this.src='/images/placeholder.svg'">
+            <div class="category-overlay">
+              <h3>Suits &amp; Blazers</h3>
+              <span>Explore →</span>
+            </div>
+          </a>
+          <a href="#shop" class="category-card reveal" data-filter="shirts" data-nav="shop">
+            <img src="https://picsum.photos/seed/aerostyles-cat-shirts/600/800" alt="Shirts" onerror="this.onerror=null;this.src='/images/placeholder.svg'">
+            <div class="category-overlay">
+              <h3>Dress Shirts</h3>
+              <span>Explore →</span>
+            </div>
+          </a>
+          <a href="#shop" class="category-card reveal" data-filter="outerwear" data-nav="shop">
+            <img src="https://picsum.photos/seed/aerostyles-cat-outerwear/600/800" alt="Outerwear" onerror="this.onerror=null;this.src='/images/placeholder.svg'">
+            <div class="category-overlay">
+              <h3>Outerwear</h3>
+              <span>Explore →</span>
+            </div>
+          </a>
+          <a href="#shop" class="category-card reveal" data-filter="accessories" data-nav="shop">
+            <img src="https://picsum.photos/seed/aerostyles-cat-accessories/600/800" alt="Accessories" onerror="this.onerror=null;this.src='/images/placeholder.svg'">
+            <div class="category-overlay">
+              <h3>Accessories</h3>
+              <span>Explore →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop section" id="shop">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">The Boutique</span>
+          <h2 class="section-title">Our Collection</h2>
+        </div>
+
+        <div class="shop-toolbar reveal">
+          <div class="filter-tabs" id="filterTabs">
+            <button class="filter-tab active" data-category="all">All</button>
+            <button class="filter-tab" data-category="suits">Suits</button>
+            <button class="filter-tab" data-category="shirts">Shirts</button>
+            <button class="filter-tab" data-category="outerwear">Outerwear</button>
+            <button class="filter-tab" data-category="accessories">Accessories</button>
+          </div>
+          <div class="shop-controls">
+            <select id="sortSelect" class="sort-select">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name A–Z</option>
+            </select>
+            <button class="btn btn-sm btn-outline" id="sizeGuideBtn">Size Guide</button>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+      <div class="promo-bg">
+        <img src="https://picsum.photos/seed/aerostyles-promo/1920/1080" alt="Gentleman style" onerror="this.onerror=null;this.src='/images/placeholder.svg'">
+        <div class="promo-overlay"></div>
+      </div>
+      <div class="promo-content container reveal">
+        <span class="section-label">Limited Edition</span>
+        <h2>The Heritage Collection</h2>
+        <div class="section-rule"></div>
+        <p>Hand-stitched Italian wool — fifty pieces worldwide. Numbered. Signed. Yours.</p>
+        <a href="#shop" class="btn btn-gold" data-nav="shop"><span>Reserve Yours</span></a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Clientele</span>
+          <h2 class="section-title">What Gentlemen Say</h2>
+        </div>
+        <div class="testimonials-slider" id="testimonialsSlider">
+          <div class="testimonial-card active">
+            <div class="stars">★★★★★</div>
+            <p>"The fit is impeccable. I've never owned a suit that drapes this beautifully. Aero Styles has become my go-to for every occasion."</p>
+            <cite>— James Whitmore, New York</cite>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Classic elegance with modern comfort. The checkout was seamless and my order arrived in two days. Exceptional quality throughout."</p>
+            <cite>— Marcus Chen, San Francisco</cite>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"From the packaging to the fabric — everything screams luxury. The size guide made ordering online effortless."</p>
+            <cite>— Oliver Grant, London</cite>
+          </div>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="https://picsum.photos/seed/aerostyles-about/800/1000" alt="Tailoring craftsmanship" onerror="this.onerror=null;this.src='/images/placeholder.svg'">
+          <div class="about-badge">
+            <span class="badge-number">37+</span>
+            <span class="badge-text">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Crafted for the Discerning Gentleman</h2>
+          <p>Founded in 1987, Aero Styles began as a small tailoring atelier with a singular vision: to create men's wear that honours tradition while embracing contemporary refinement.</p>
+          <p>Every garment in our collection is selected for its quality of fabric, precision of cut, and enduring style. We believe true elegance is never loud — it is felt.</p>
+          <ul class="about-stats stagger-children reveal">
+            <li><strong>12K+</strong><span>Happy Clients</span></li>
+            <li><strong>200+</strong><span>Curated Pieces</span></li>
+            <li><strong>15</strong><span>Countries Served</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section">
+      <div class="container newsletter-inner reveal">
+        <div class="newsletter-text">
+          <span class="section-label">Stay Refined</span>
+          <h2>Join the Aero Styles Circle</h2>
+          <p>Exclusive previews, styling tips, and members-only offers delivered to your inbox.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Flagship Store</strong>
+                <p>42 Savile Row, London W1S 3PE</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Phone</strong>
+                <p>+44 (0) 20 7946 0958</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <strong>Email</strong>
+                <p>concierge@aerostyles.com</p>
+              </div>
+            </div>
+            <div class="contact-hours">
+              <strong>Store Hours</strong>
+              <p>Mon – Fri: 10:00 AM – 7:00 PM</p>
+              <p>Saturday: 10:00 AM – 6:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" required>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-main">Aero Styles</span>
+        <p>Timeless men's wear for the modern gentleman. Quality, craftsmanship, and classic style since 1987.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="#shop" data-nav="shop">All Products</a>
+        <a href="#shop" data-filter="suits" data-nav="shop">Suits</a>
+        <a href="#shop" data-filter="shirts" data-nav="shop">Shirts</a>
+        <a href="#shop" data-filter="outerwear" data-nav="shop">Outerwear</a>
+      </div>
+      <div class="footer-links">
+        <h4>Help</h4>
+        <a href="#" id="footerSizeGuide">Size Guide</a>
+        <a href="#">Shipping Info</a>
+        <a href="#">Returns Policy</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#about" data-nav="about">About Us</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Aero Styles. All rights reserved.</p>
+      <div class="payment-icons">
+        <span>Visa</span>
+        <span>Mastercard</span>
+        <span>Amex</span>
+        <span>PayPal</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Modal -->
+  <div class="modal" id="productModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content product-modal-content">
+      <button class="close-btn modal-close" aria-label="Close">&times;</button>
+      <div class="product-modal-grid" id="productModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-backdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <h3>Shopping Bag</h3>
+        <button class="close-btn" id="closeCart" aria-label="Close cart">&times;</button>
+      </div>
+      <div class="drawer-body" id="cartItems"></div>
+      <div class="drawer-footer" id="cartFooter">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <p class="cart-shipping-note">Shipping calculated at checkout</p>
+        <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Checkout</button>
+        <button class="btn btn-secondary btn-full" id="continueShopping">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="drawer" id="wishlistDrawer">
+    <div class="drawer-backdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <h3>Wishlist</h3>
+        <button class="close-btn" id="closeWishlist" aria-label="Close wishlist">&times;</button>
+      </div>
+      <div class="drawer-body" id="wishlistItems"></div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal" id="checkoutModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content checkout-modal-content">
+      <button class="close-btn modal-close" aria-label="Close">&times;</button>
+      <div class="checkout-layout">
+        <div class="checkout-main">
+          <div class="checkout-steps" id="checkoutSteps">
+            <div class="step active" data-step="1"><span>1</span><em>Your Info</em></div>
+            <div class="step" data-step="2"><span>2</span><em>Payment</em></div>
+            <div class="step" data-step="3"><span>3</span><em>Confirm</em></div>
+          </div>
+          <div id="checkoutBody"></div>
+        </div>
+        <aside class="checkout-sidebar" id="checkoutSidebar"></aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Size Guide Modal -->
+  <div class="modal" id="sizeGuideModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content size-guide-content">
+      <button class="close-btn modal-close" aria-label="Close">&times;</button>
+      <h2>Size Guide</h2>
+      <div class="size-tabs">
+        <button class="size-tab active" data-size-tab="suits">Suits &amp; Blazers</button>
+        <button class="size-tab" data-size-tab="shirts">Shirts</button>
+        <button class="size-tab" data-size-tab="trousers">Trousers</button>
+      </div>
+      <div class="size-table-wrap">
+        <table class="size-table active" data-size-table="suits">
+          <thead><tr><th>Size</th><th>Chest (in)</th><th>Waist (in)</th><th>Length (in)</th></tr></thead>
+          <tbody>
+            <tr><td>36S</td><td>36</td><td>30</td><td>28</td></tr>
+            <tr><td>38R</td><td>38</td><td>32</td><td>30</td></tr>
+            <tr><td>40R</td><td>40</td><td>34</td><td>30</td></tr>
+            <tr><td>42L</td><td>42</td><td>36</td><td>32</td></tr>
+            <tr><td>44L</td><td>44</td><td>38</td><td>32</td></tr>
+          </tbody>
+        </table>
+        <table class="size-table" data-size-table="shirts">
+          <thead><tr><th>Size</th><th>Neck (in)</th><th>Chest (in)</th><th>Sleeve (in)</th></tr></thead>
+          <tbody>
+            <tr><td>S</td><td>14–14.5</td><td>34–36</td><td>32–33</td></tr>
+            <tr><td>M</td><td>15–15.5</td><td>38–40</td><td>33–34</td></tr>
+            <tr><td>L</td><td>16–16.5</td><td>42–44</td><td>34–35</td></tr>
+            <tr><td>XL</td><td>17–17.5</td><td>46–48</td><td>35–36</td></tr>
+            <tr><td>XXL</td><td>18–18.5</td><td>50–52</td><td>36–37</td></tr>
+          </tbody>
+        </table>
+        <table class="size-table" data-size-table="trousers">
+          <thead><tr><th>Size</th><th>Waist (in)</th><th>Inseam (in)</th><th>Fit</th></tr></thead>
+          <tbody>
+            <tr><td>30</td><td>30</td><td>30</td><td>Slim</td></tr>
+            <tr><td>32</td><td>32</td><td>32</td><td>Slim</td></tr>
+            <tr><td>34</td><td>34</td><td>32</td><td>Regular</td></tr>
+            <tr><td>36</td><td>36</td><td>34</td><td>Regular</td></tr>
+            <tr><td>38</td><td>38</td><td>34</td><td>Relaxed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
